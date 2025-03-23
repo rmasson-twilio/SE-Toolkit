@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <input type="number" id="number1" placeholder="Enter first number">
+    <input type="number" id="number2" placeholder="Enter second number">
+    <button onclick="addNumbers()">+</button>
+    <p id="result"></p>
+
+    <script src="helloworld.js"></script>
+    <script type="text/javascript">
+        function addNumbers() { 
+            let a = document.getElementById('number1').value;
+            let b = document.getElementById('number2').value;
+            document.getElementById('result').innerText = 'Result: ' + addthenums(a, b);
+        }
+    </script>
+</body>
+</html>
